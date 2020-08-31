@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List</title>
+	</head>
+	<body>
+
+		{% for p in page %}
+
+			<ul>
+
+				<li> <a href="{{p.get_absolute_url}}">{{ p.title }}</a></li>
+				<li>{{ p.last_update }}</li>
+
+			</ul>
+
+
+		{% endfor %}
+
+
+	</body>
+</html>
